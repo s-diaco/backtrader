@@ -65,10 +65,6 @@ def tsedata():
 cerebro = bt.Cerebro()
 cerebro.addstrategy(SmaCross)
 
-data0 = bt.feeds.YahooFinanceData(dataname='YHOO',
-                                  fromdate=datetime(2011, 1, 1),
-                                  todate=datetime(2012, 12, 31))
-
 cerebro.adddata(tsedata())
 
 cerebro.run()
